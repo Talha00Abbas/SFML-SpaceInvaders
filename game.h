@@ -84,6 +84,7 @@ public:
 		
 		srand(time(0));
 		RenderWindow window(VideoMode(780, 780), title);
+		window.setFramerateLimit(240);
 		Clock clock;
 		float timer=0;
 		
@@ -350,6 +351,7 @@ public:
 		
 		srand(time(0));
 		RenderWindow window(VideoMode(780, 780), "Level 2");
+		window.setFramerateLimit(240);
 		Clock clock;
 		float timer=0;
 		
@@ -616,7 +618,8 @@ public:
 		//music.play();			//Plays Background Music
 		
 		srand(time(0));
-		RenderWindow window(VideoMode(780, 780), "Level 2");
+		RenderWindow window(VideoMode(780, 780), "Boss Level");
+		window.setFramerateLimit(240);
 		Clock clock;
 		float timer=0;
 		
@@ -976,4 +979,3 @@ void gameWon()
 
 
 };
-
