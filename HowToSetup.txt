@@ -1,0 +1,7 @@
+Make sure you have SFML and GCC installed in your device. Also the game is supported for GCC version 11 or more
+
+Commands for compiling and running the sfml code, 
+
+g++ -c main.cpp
+g++ main.o -o sfml-app -lsfml-graphics -lsfml-window -lsfml-system -lsfml-audio
+./sfml-app
