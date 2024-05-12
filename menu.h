@@ -13,7 +13,7 @@ class Menu
 
 	void display_menu()
 	{
-	
+		
         //display menu screen here
         RectangleShape startButton(sf::Vector2f(100, 50));
         startButton.setPosition(350, 275);
@@ -24,7 +24,9 @@ class Menu
         instructionButton.setFillColor(Color::Yellow);
 
         RenderWindow window(VideoMode(800, 600), "Main Menu");
-
+		
+		window.setFramerateLimit(240);
+		
         Font font;
         font.loadFromFile("asd.otf");
         if (!font.loadFromFile("asd.otf"))
